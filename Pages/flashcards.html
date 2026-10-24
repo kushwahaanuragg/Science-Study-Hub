@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashcards</title>
+  <link rel="stylesheet" href="../Styling/style.css"/>
+  <link rel="stylesheet" href="../Styling/media.css"/>
+</head>
+
+<body id="flashcardsBody">
+
+  <nav>
+    <div>
+      <h1>Study Hub <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-book-open-text preview-icon">
+          <path d="M12 5v16" />
+          <path d="M16 13h2" />
+          <path d="M16 9h2" />
+          <path
+            d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z" />
+          <path d="M6 13h2" />
+          <path d="M6 9h2" />
+        </svg></h1>
+      <h3>By: Anurag Kushwaha</h3>
+    </div>
+
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-menu preview-icon">
+        <path d="M4 5h16" />
+        <path d="M4 12h16" />
+        <path d="M4 19h16" />
+      </svg>
+    </div>
+  </nav>
+
+  <section id="welcomeSection">
+    <h3>Welcome To The Flashcards Challenge</h3>
+    <h5>Here, you can have a quick overview of the notes.</h5>
+    <select id="chapterSelect" aria-label="Select a chapter">
+      <option value="chapter6">Chapter 6: How Forces Affect Motion</option>
+      <option value="chapter8">Chapter 8: Journey Inside An Atom</option>
+      <option value="chapter9">Chapter 9: Atomic Foundations Of Matter</option>
+    </select>
+  </section>
+
+  <hr />
+
+
+
+  <section id="flashcardsSection">
+    <div id="flashcardContainer">
+      <div id="flashcardDisplay"></div>
+      <div id="answerButton">
+        <h3 id="answerButtonText">Reveal Answer</h3>
+      </div>
+    </div>
+  </section>
+
+  <script src="../Script/script.js"></script>
+</body>
+</html>

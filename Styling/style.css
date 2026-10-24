@@ -1,0 +1,259 @@
+:root {
+    --bg: #0096c7;
+    --bg-dark: #0077b6;
+    --cards: #023e8a;
+    --border: #03045e;
+    --accent: aqua;
+    --text: #edf6f9;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+    color: var(--text);
+    user-select: none;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(to bottom right, var(--bg-dark), var(--bg));
+    min-height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+nav {
+    background-color: var(--cards);
+    display: flex;
+    height: fit-content;
+    width: 100vw;
+    padding: 20px 40px;
+    line-height: 38px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 5px var(--border);
+
+    h3 {
+        padding-left: 10px;
+        opacity: 0.7;
+        border-left: solid 5px var(--border);
+    }
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+#welcomeSection {
+    padding: 20px;
+
+    h5 {
+        margin-bottom: 20px;
+    }
+
+    #chapterSelect {
+        width: fit-content;
+        max-width: 90vw;
+        padding: 8px 12px;
+        margin-bottom: 10px;
+        color: var(--text);
+        background-color: var(--cards);
+        border: solid 3px var(--border);
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    ul li {
+        list-style: none;
+        width: fit-content;
+        padding: 5px;
+        margin: 5px;
+        background-color: var(--cards);
+        border: solid 5px var(--border);
+        border-radius: 20px;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+#quickStats>h3{
+    padding: 10px 20px;
+}
+
+#quickStats #cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    div {
+        flex-grow: 1;
+        padding: 15px;
+        margin: 20px;
+        height: fit-content;
+        width: 200px;
+        background-color: var(--cards);
+        border: solid 5px var(--border);
+        border-radius: 20px;
+    }
+}
+
+#practices>h3 {
+    padding: 10px 20px;
+}
+
+#practices>div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    div {
+        flex-grow: 1;
+        padding: 15px;
+        margin: 20px;
+        height: fit-content;
+        width: 200px;
+        background-color: var(--cards);
+        border: solid 5px var(--border);
+        border-radius: 20px;
+
+        a {
+            display: flex;
+            align-items: center;
+
+            svg {
+                scale: 1.2;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Notes Page  */
+
+
+
+.notesSection {
+    width: 95vw;
+    background-color: var(--cards);
+    border: solid 5px var(--border);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 40px;
+    font-size: 0.8rem;
+    line-height: 1.7;
+    color: var(--text);
+
+    h2 {
+        font-size: 1.2rem;
+        color: var(--accent);
+    }
+
+    h5 {
+        font-size: 0.9rem;
+        font-weight: 700;
+        color: var(--accent);
+        margin: 18px 0 8px;
+    }
+
+    h6 {
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin: 12px 0 6px;
+    }
+
+    p, li {
+        font-size: 0.8rem;
+        line-height: 1.6;
+    }
+
+    ul, ol {
+        padding-left: 20px;
+        margin: 6px 0 12px;
+    }
+
+    li {
+        margin-bottom: 4px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Flashcards Page */
+
+
+#flashcardsSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    height: fit-content;
+}
+
+#flashcardContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 50vh;
+    width: 60vw;
+    background-color: var(--cards);
+    border: solid 5px var(--border);
+    border-radius: 30px;
+
+    
+    #flashcardDisplay {
+        text-align: center;
+        height: fit-content;
+        width: 70%;
+        background-color: navy;
+        color: var(--text);
+        font-size: 2rem;
+        padding: 10px;
+        border-radius: 20px;
+    }
+
+    #answerButton {
+        display: flex;
+        height: fit-content;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        #answerButtonText {
+            padding: 10px;
+            border: solid 5px var(--border);
+            border-radius: 20px;
+        }
+    }
+}
+
