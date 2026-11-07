@@ -1,0 +1,99 @@
+@keyframes loadingAnimation {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes navbarAnimation {
+    0% {
+        transform: translateY(-80%);
+        opacity: 0;
+    }
+    20% {
+        transform: translateY(-80%);
+        opacity: 0;
+    }
+}
+
+@keyframes navbarTextAnimation {
+    0% {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+    40% {
+        transform: translateX(-200%);
+        opacity: 0.5;
+    }
+    80% {
+        rotate: 0deg;
+    }
+    85% {
+        rotate: 3deg;
+        transform: skew(-10deg);
+        scale: 0.9;
+        filter: drop-shadow(0 0 0px var(--primary));
+    }
+    90% {
+        transform: translateX(40px);
+        opacity: 1;
+        transform: skew(-10deg);
+        scale: 0.9;
+        filter: drop-shadow(0 0 10px var(--accent));
+    }
+    95% {
+        rotate: 3deg;
+        filter: drop-shadow(0 0 10px var(--accent));
+    }
+}
+
+@keyframes FadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+div:not(nav>div), footer, select {
+    animation: loadingAnimation 2s ease-in both;
+}
+
+nav {
+    animation: navbarAnimation 2s ease-in-out both;
+}
+
+nav>div:not(:nth-child(2)) {
+    animation: navbarTextAnimation 3s ease both;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, button, li, hr {
+    animation: FadeInAnimation 2s ease-in both;
+}
+
+#quickStats #cardsContainer>div:hover {
+    transition: 0.3s scale;
+    scale: 1.05;
+}
+
+#flashcardContainer {
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease;
+}
+
+#flashcardContainer.flipped {
+    transform: rotateY(180deg);
+}
+
+#sidebar {
+    animation: none;
+    transition: all 0.5s ease-out;
+}
+

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashcards</title>
+  <link rel="stylesheet" href="../Styling/style.css"/>
+  <link rel="stylesheet" href="../Styling/media.css"/>
+  <link rel="stylesheet" href="../Styling/animation.css"/>
+</head>
+
+<body id="flashcardsBody">
+
+  <nav>
+    <div>
+      <h1>Study Hub <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-notebook-pen preview-icon"><path d="M13.4 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7.4"/><path d="M2 6h4"/><path d="M2 10h4"/><path d="M2 14h4"/><path d="M2 18h4"/><path d="M21.378 5.626a1 1 0 1 0-3.004-3.004l-5.01 5.012a2 2 0 0 0-.506.854l-.837 2.87a.5.5 0 0 0 .62.62l2.87-.837a2 2 0 0 0 .854-.506z"/></svg></h1>
+      <h3>By: Anurag Kushwaha</h3>
+    </div>
+
+    <div>
+      <label for="sidebarActive" id="sidebarOpen">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-menu preview-icon">
+        <path d="M4 5h16" />
+        <path d="M4 12h16" />
+        <path d="M4 19h16" />
+      </svg>
+      </label>
+    </div>
+  </nav>
+
+  <input type="checkbox" id="sidebarActive">
+
+  <label for="sidebarActive" id="overlay"></label>
+
+  <div id="sidebar">
+    <label for="sidebarActive" id="sidebarClose">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x preview-icon"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </label>
+
+    <a href="../index.html">Home</a>
+    <a href="notes.html">Notes</a>
+    <a href="flashcards.html">Flashcards</a>
+    <a href="MCQs.html">MCQs</a>
+    <a href="questions.html">Questions</a>
+  </div>
+
+  <section id="welcomeSection">
+    <h3>Welcome To The Flashcards Challenge</h3>
+    <h5>Here, you can have a quick overview of the notes.</h5>
+    <select id="chapterSelect" aria-label="Select a chapter">
+      <option value="chapter6">Chapter 6: How Forces Affect Motion</option>
+      <option value="chapter8">Chapter 8: Journey Inside An Atom</option>
+      <option value="chapter9">Chapter 9: Atomic Foundations Of Matter</option>
+    </select>
+  </section>
+
+  <hr />
+
+
+
+  <section id="flashcardsSection">
+    <div id="flashcardContainer">
+      <div id="flashcardDisplay"></div>
+      <div id="answerButtonArea">
+        <h3 id="answerButton">Reveal Answer</h3>
+      </div>
+    </div>
+  </section>
+
+  <script src="../Script/flashcard.js"></script>
+</body>
+</html>

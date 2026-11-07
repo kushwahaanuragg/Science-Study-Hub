@@ -1,0 +1,141 @@
+@media (max-width: 580px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    nav {
+        line-height: 25px;
+        padding: 10px 20px;
+
+        h3 {
+            font-size: 0.75rem;
+        }
+
+        svg {
+            scale: 1;
+        }
+    }
+
+    #quickStats #cardsContainer div {
+        padding: 10px;
+        margin: 10px 0px;
+        min-width: 150px;
+    }
+
+    #welcomeSection {
+        padding: 16px;
+    }
+
+    #welcomeSection #chapterSelect {
+        width: 100%;
+        font-size: 0.85rem;
+    }
+
+    #practices>div div {
+        padding: 8px;
+
+        a svg {
+            scale: 0.8;
+            margin-right: 5px;
+        }
+    }
+
+    #sidebar {
+        width: 200px;
+    }
+
+    .notesSection #notesContainer {
+        width: calc(100% - 20px);
+        padding: 15px;
+        margin: 20px 0;
+        font-weight: 200;
+
+        *:not(h2) {
+            font-size: 0.7rem;
+        }
+    }
+
+    #flashcardsSection {
+        min-height: 55vh;
+        padding: 10px;
+    }
+
+    #flashcardContainer {
+        width: calc(100% - 40px);
+        min-height: 40vh;
+        height: fit-content;
+        border-radius: 16px;
+    }
+
+    #flashcardContainer #flashcardDisplay {
+        width: 90%;
+        max-height: 70%;
+        overflow-y: auto;
+        font-size: 1.15rem;
+        line-height: 1.5;
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    #flashcardContainer #answerButtonArea {
+        width: 90%;
+    }
+
+    #flashcardContainer #answerButton {
+        width: fit-content;
+        text-align: center;
+        padding: 12px;
+        border-radius: 12px;
+    }
+
+    #MCQSection {
+        height: 60vh;
+    }
+
+    #MCQContainer {
+        min-height: 40vh;
+        height: fit-content;
+        width: calc(100% - 40px);
+        border-width: 3px;
+
+        #MCQDisplay {
+            font-size: 1rem;
+        }
+
+        h5 {
+            border-width: 3px;
+        }
+    }
+
+    #filterSection {
+        
+        
+        div>button {
+            font-size: 1rem;
+            margin: 5px;
+            padding: 8px;
+        }
+    }
+
+    #displaySection {
+        padding: 10px;
+    }
+
+    #displaySection>#container {
+        width: calc(100% - 10px);
+
+        div {
+            width: 100%;
+            margin: 10px 0;
+            font-size: 1rem;
+            margin: 0;
+            padding: 1px;
+        }
+        
+    }
+}
+
+/* Animations */
+
+@media (max-width: 580px) {}
+
